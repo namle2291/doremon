@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("https://coderoom.info/japan.jpg") no-repeat center center;
+    height: 100vh;
+    font-family:  sans-serif;
+}
+.box{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    background: white;
+    border-radius: 6px;
+    margin-top: 50px;
+    padding: 50px 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.582);
+}
+.box .col-1{
+    width: 60%;
+    padding-right: 50px;
+}
+.box .col-1 h1{
+    color: blue;
+}
+.box .col-1 p{
+    margin-top: 30px;
+    text-align: justify;
+}
+.box .col-2{
+    width: 30%;
+}
+.col-2 img{
+    width: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width: 600px) {
+    .box {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .col-2{
+        order: 1;
+        width: 100%;
+    }
+    .col-1{
+        order: 2;
+        width: 100%;
+    }
+}
